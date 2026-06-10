@@ -84,3 +84,257 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electronic Appliances Shop</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    margin:0;
+}
+
+h1{
+    background:#1e3a8a;
+    color:white;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    margin:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Electronic Appliances Shop</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600" alt="Smart TV">
+        <h3>Smart TV</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600" alt="Washing Machine">
+        <h3>Washing Machine</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600" alt="Refrigerator">
+        <h3>Refrigerator</h3>
+    </div>
+
+</div>
+
+<button onclick="showMessage()">View Products</button>
+
+<script>
+function showMessage() {
+    alert("Welcome to our Electronic Appliances Shop!");
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electronic Appliances Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+        }
+
+        .product {
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px gray;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Electronic Appliances Shop</h1>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Refrigerator">
+        <h3>Refrigerator</h3>
+        <p>Price: ₹25,000</p>
+        <button onclick="buyProduct('Refrigerator')">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Washing Machine">
+        <h3>Washing Machine</h3>
+        <p>Price: ₹18,000</p>
+        <button onclick="buyProduct('Washing Machine')">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Television">
+        <h3>Television</h3>
+        <p>Price: ₹30,000</p>
+        <button onclick="buyProduct('Television')">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Air Conditioner">
+        <h3>Air Conditioner</h3>
+        <p>Price: ₹35,000</p>
+        <button onclick="buyProduct('Air Conditioner')">Buy Now</button>
+    </div>
+
+    <script>
+        function buyProduct(productName) {
+            alert("Thank you for choosing " + productName + "!");
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electronic Appliances Shop</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Electronic Appliances Shop</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to Our Electronic Appliances Shop</h2>
+        <p>Best Deals on Home Appliances and Electronics</p>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <p>Refrigerator | TV | Washing Machine | AC</p>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li>Kitchen Appliances</li>
+            <li>Home Entertainment</li>
+            <li>Cooling Appliances</li>
+            <li>Laundry Appliances</li>
+        </ul>
+    </section>
+
+    <!-- Top Brands -->
+    <section id="top-brands">
+        <h2>Top Brands</h2>
+        <p>LG, Samsung, Sony, Whirlpool, Panasonic</p>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="best-sellers">
+        <h2>Best Sellers</h2>
+        <p>Smart TV, Double Door Refrigerator, Front Load Washing Machine</p>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <p>"Excellent products and fast delivery!"</p>
+        <p>"Great customer service."</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Q:</strong> Do you provide home delivery?</p>
+        <p><strong>A:</strong> Yes, we provide home delivery.</p>
+
+        <p><strong>Q:</strong> Is warranty available?</p>
+        <p><strong>A:</strong> Yes, all products come with warranty.</p>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 9876543210</p>
+        <p>Email: info@electronicshop.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Electronic Appliances Shop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
