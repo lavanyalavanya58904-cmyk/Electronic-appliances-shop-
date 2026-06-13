@@ -91,6 +91,208 @@ function showMessage() {
 </body>
 </html>
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Electronic Appliances Shop</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    text-align:center;
+}
+
+h1{
+    background:#1e3a8a;
+    color:white;
+    padding:20px;
+}
+
+.offer{
+    background:#ffcc00;
+    color:black;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 4px 8px gray;
+    padding-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    border-radius:10px 10px 0 0;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#1e3a8a;
+}
+
+.price{
+    font-size:18px;
+}
+
+.old{
+    text-decoration:line-through;
+    color:red;
+}
+
+.new{
+    color:green;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.discount{
+    color:#d00000;
+    font-weight:bold;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Electronic Appliances Shop</h1>
+
+<div class="offer">
+🔥 Special Discount Offers Up To 40% OFF 🔥
+</div>
+
+
+<div class="container">
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600">
+
+<h2>Smart TV</h2>
+
+<p class="price">
+<span class="old">₹50,000</span><br>
+<span class="new">₹35,000</span>
+</p>
+
+<p class="discount">30% OFF</p>
+
+<button onclick="buyProduct('Smart TV')">
+Buy Now
+</button>
+
+</div>
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600">
+
+<h2>Washing Machine</h2>
+
+<p class="price">
+<span class="old">₹40,000</span><br>
+<span class="new">₹28,000</span>
+</p>
+
+<p class="discount">30% OFF</p>
+
+<button onclick="buyProduct('Washing Machine')">
+Buy Now
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600">
+
+<h2>Refrigerator</h2>
+
+<p class="price">
+<span class="old">₹60,000</span><br>
+<span class="new">₹42,000</span>
+</p>
+
+<p class="discount">30% OFF</p>
+
+<button onclick="buyProduct('Refrigerator')">
+Buy Now
+</button>
+
+</div>
+
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600">
+
+<h2>Air Conditioner</h2>
+
+<p class="price">
+<span class="old">₹45,000</span><br>
+<span class="new">₹32,000</span>
+</p>
+
+<p class="discount">28% OFF</p>
+
+<button onclick="buyProduct('Air Conditioner')">
+Buy Now
+</button>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+function buyProduct(product)
+{
+    alert("Thank you for choosing " + product + 
+    ". Your order has been placed!");
+}
+
+</script>
+
+
+</body>
+</html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
